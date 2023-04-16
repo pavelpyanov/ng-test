@@ -1,0 +1,20 @@
+<div>
+  <!-- If data is still being loaded -->
+  <div *ngIf="isLoaded === false">
+    <div class="loader">Loading data ...</div>
+  </div>
+  <div *ngIf="isLoaded === true">
+    <div class="card">
+      <div class="subcard">
+        <div class="purchased-products">
+          <h1>{{ customerName }} Purchased products:</h1>
+          <ul>
+            <li *ngFor="let product of products">
+              {{ product.name }} ({{ product.type }})
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

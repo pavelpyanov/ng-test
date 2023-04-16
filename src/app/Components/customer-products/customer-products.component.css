@@ -1,0 +1,19 @@
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  padding: 10px;
+}
+
+.subCard {
+  margin-top: 10px;
+}

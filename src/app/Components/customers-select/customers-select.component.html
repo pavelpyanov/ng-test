@@ -1,0 +1,12 @@
+<div class=".selectWrapper">
+  <label for="customer">Select a customer:</label>
+  <br />
+  <br />
+  <select id="customer" (change)="onSelect($event)">
+    <option *ngFor="let customer of customers" [value]="customer.id">
+      {{ customer.lastname }}, {{ customer.firstname }} ({{
+        customer.yearofbirth
+      }})
+    </option>
+  </select>
+</div>
